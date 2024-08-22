@@ -1,131 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        #about {
-            padding: 20px 0;
-            text-align: center;
-        }
-        #about h2 {
-            margin-bottom: 20px;
-        }
-        #projects {
-            padding: 20px 0;
-        }
-        #projects h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .project {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        footer form {
-            display: inline-block;
-            text-align: left;
-        }
-        footer form input,
-        footer form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 5px;
-            border: none;
-        }
-        footer form input[type="submit"] {
-            background: #f4f4f4;
-            color: #333;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        footer form input[type="submit"]:hover {
-            background: #ddd;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krish's Portfolio</title>
+  <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Aditya Yadav</h1>
-            <nav>
-                <ul>
-                    <li><a href="aboutme.html">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header id="header-section">
+    <p id="logo-text"><a href="#header-section">Krish's Portfolio</a></p>
+    <nav id="navbar">
+      <ul id="navbar-links">
+        <li id="about-me-navlink"><a href="#about-me-section">About me</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li id="contact-info-navlink"><a href="#contact-info-content">Contact Info</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate developer with experience in web development and software engineering.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of the project.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of the project.</p>
-            </div>
-        </section>
+  <div id="hero-image-section">
+    <div id="hero-image">
+      <img src="Personal Portfolio Assets\profile-picture.jpeg" alt="Krish's Profile Picture">
     </div>
+    <div>
+      <p id="hero-image-heading">
+        Hello World!<br>
+        Welcome to my Portfolio
+      </p>
+      <p id="hero-image-subheading">
+        I'm Krish,<br>
+        And I'm currently learning WebDev...
+      </p>
+    </div>
+  </div>
 
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form action="send_email.php" method="post">
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </footer>
+  <div id="about-me-section">
+    <p id="about-me-heading">
+      About me
+    </p>
+    <ul id="about-me-content">
+      <li>
+        Undergrad `26 E&CS
+      </li>
+      <li>
+        Tech Stack
+        <ul>
+          <li>HTML + CSS</li>
+          <li>C++</li>
+          <li>Figma</li>
+        </ul>
+      </li>
+      <li>
+        Getting closer to MERN Stack Day By Day...
+      </li>
+      <li>
+        Tech + Creativity = "Source of my Smile :)"
+      </li>
+    </ul>
+  </div>
+  <div id="projects-section">
+    <p id="projects-heading">
+      Projects
+    </p>
+    <div id="projects-container-1">
+      <div id="projects-container-1-left-section">
+<!--       <img src="Personal Portfolio Assets\vs_logo.png" alt="VedShare Logo">
+        <p>VedShare</p>
+-->
+      </div>
+      <div id="projects-container-1-right-section">
+        <ul id="projects-container-1-rigth-section">
+          <li>
+            Status: In Progress
+          </li>
+          <li>
+            Role: Developer
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="contact-info-section">
+    <p id="contact-info-heading">
+      Reach Out To Me...
+    </p>
+    <ul id="contact-info-content">
+      <li>
+        <img src="Personal Portfolio Assets\email-icon.png" alt="email logo">
+        <a href="mailto:krishrjain@gmail.com">
+          Email: krishrjain@gmail.com
+        </a>
+      </li>
+      <li>
+        <img src="Personal Portfolio Assets\github-icon.png" alt="GitHub logo">
+        <a href="https://github.com/krjofficial" target="_blank">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <img src="Personal Portfolio Assets\x-icon.png" alt="X logo">
+        <a href="https://x.com/krjoffixial" target="_blank">
+          X
+        </a>
+      </li>
+      <li>
+        <img src="Personal Portfolio Assets\linkedin-icon.png" alt="linkedin logo">
+        <a href="https://www.linkedin.com/in/krjofficial/" target="_blank">
+          LinkedIn
+        </a>
+      </li>
+      <li>
+        <img src="Personal Portfolio Assets\whatsapp-icon.png" alt="Whatsapp logo">
+        <a href="https://api.whatsapp.com/send/?phone=9152258047&text&type=phone_number" target="_blank">
+          Whatsapp
+        </a>
+      </li>
+      <li>
+        <img src="Personal Portfolio Assets\insta-icon.png" alt="instagram logo">
+        <a href="https://www.instagram.com/krj.offixial/" target="_blank">
+          Instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+  
 </body>
 </html>
